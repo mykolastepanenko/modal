@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Модальное окно</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main>
+      <div class="modal d-none">
+        <button data-modal-close class="btn-close">&#215;</button>
+        <form class="form">
+          <label for="firstname">Имя</label>
+          <input name="firstname" type="text" id="firstname" />
+          <label for="lastname">Фамилия</label>
+          <input name="lastname" type="text" id="lastname" />
+          <label for="email">Почта</label>
+          <input name="email" type="email" id="email" />
+          <label for="phone">Телефон</label>
+          <input name="phone" type="text" id="phone" />
+          <input type="submit" value="Отправить" />
+          <hr />
+          <label for="firstname">Имя</label>
+          <input name="firstname" type="text" id="firstname" />
+          <label for="lastname">Фамилия</label>
+          <input name="lastname" type="text" id="lastname" />
+          <label for="email">Почта</label>
+          <input name="email" type="email" id="email" />
+          <label for="phone">Телефон</label>
+          <input name="phone" type="text" id="phone" />
+          <input type="submit" value="Отправить" />
+        </form>
+      </div>
+      <section class="section section-1">
+        <div class="container">
+          <h1>Заголовок 1</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+            sequi rem aliquid ut! Dolore quasi, eum tempora nostrum culpa
+            quisquam nemo numquam ex exercitationem, vero doloremque consequatur
+            voluptas, ullam inventore.
+          </p>
+          <button
+            data-modal-open
+            aria-label="Открыть модальное окно"
+            class="btn"
+          >
+            Открыть модальное окно
+          </button>
+        </div>
+      </section>
+      <section class="section section-2"></section>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
